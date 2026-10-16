@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="scientific.css">
+</head>
+<body>
+  <main class="calculator">
+    <header>
+      <div>
+        <p class="eyebrow">ADVANCED MATHEMATICS</p>
+        <h1>Scientific</h1>
+      </div>
+      <a class="switch" href="index.html">Simple ↗</a>
+    </header>
+
+    <div class="mode-row">
+      <button id="angle" class="mode">DEG</button>
+      <span>Trigonometry · Logarithms · Powers</span>
+    </div>
+
+    <section class="display">
+      <div id="history" class="history">Scientific mode</div>
+      <input id="display" value="0" readonly aria-label="Calculator display">
+    </section>
+
+    <section class="keys">
+      <button class="utility" data-action="clear">AC</button>
+      <button class="utility" data-action="delete">DEL</button>
+      <button data-action="open">(</button>
+      <button data-action="close">)</button>
+      <button class="operator" data-value="/">÷</button>
+
+      <button data-fn="sin">sin</button>
+      <button data-fn="cos">cos</button>
+      <button data-fn="tan">tan</button>
+      <button class="operator" data-value="*">×</button>
+      <button data-action="square">x²</button>
+
+      <button data-fn="sqrt">√</button>
+      <button data-fn="log">log</button>
+      <button data-fn="ln">ln</button>
+      <button class="operator" data-value="-">−</button>
+      <button data-action="power">xʸ</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="operator" data-value="+">+</button>
+      <button data-action="pi">π</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-action="percent">%</button>
+      <button data-action="e">e</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-action="sign">+/−</button>
+      <button data-action="reciprocal">1/x</button>
+
+      <button data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button data-action="ans">Ans</button>
+      <button class="equals" data-action="calculate">=</button>
+    </section>
+
+    <footer>Precision in every calculation</footer>
+  </main>
+  <script src="scientific.js"></script>
+</body>
+</html>
